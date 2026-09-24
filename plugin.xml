@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-thermal-state"
+    version="1.0.0">
+
+    <name>Device Thermal State Plugin</name>
+
+    <description>
+        Cordova plugin for accessing the Android device thermal status.
+    </description>
+
+    <license>MIT</license>
+
+    <keywords>
+        thermal,
+        thermal-state,
+        temperature,
+        device,
+        android,
+        cordova,
+        native,
+        power,
+        performance,
+        throttling
+    </keywords>
+
+    <js-module
+        src="www/thermalState.js"
+        name="ThermalState">
+
+        <clobbers target="cordova.plugins.thermalState" />
+
+    </js-module>
+
+    <platform name="android">
+
+        <config-file
+            target="config.xml"
+            parent="/*">
+
+            <feature name="ThermalState">
+                <param
+                    name="android-package"
+                    value="com.murali.thermalstate.ThermalState" />
+            </feature>
+
+        </config-file>
+
+        <source-file
+            src="src/android/ThermalState.java"
+            target-dir="src/com/murali/thermalstate" />
+
+    </platform>
+
+</plugin>
