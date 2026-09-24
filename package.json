@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-thermal-state",
+  "version": "1.0.0",
+  "description": "Cordova plugin for accessing the Android device thermal status.",
+  "cordova": {
+    "id": "cordova-plugin-thermal-state",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "thermal",
+    "thermal-state",
+    "device",
+    "android",
+    "power",
+    "performance",
+    "throttling",
+    "native"
+  ],
+  "author": "Murali Manoharan V",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murali838/cordova-plugin-thermal-state.git"
+  },
+  "bugs": {
+    "url": "https://github.com/murali838/cordova-plugin-thermal-state/issues"
+  },
+  "homepage": "https://github.com/murali838/cordova-plugin-thermal-state"
+}
